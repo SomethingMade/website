@@ -322,7 +322,6 @@ form.example::after {
             <!--=============== HOME ===============-->
             <section class="container section section__height" id="home">
                 <h2 class="section__title">Home</h2><br>
-                <div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="true" data-use-continue-as="true"></div>
                 
                 <div class="row">
   <div class="column">
@@ -437,23 +436,7 @@ function closeNav() {
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-              <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=3255068518146123&autoLogAppEvents=1" nonce="1gsHtjkW"></script>  
-                
-                
-FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-});
-                
-{
-    status: 'connected',
-    authResponse: {
-        accessToken: '...',
-        expiresIn:'...',
-        signedRequest:'...',
-        userID:'...'
-    }
-}
+              
 
 
         <!--=============== MAIN JS ===============-->
