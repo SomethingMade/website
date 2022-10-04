@@ -391,7 +391,29 @@ div.scroll {
             <!--=============== HOME ===============-->
             <section class="container section section__height" id="home">
                 <h2 class="section__title">Home</h2><br>
-                
+                <button class="button" onclick="openForm()">Ask an expert</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 
 
     
@@ -432,29 +454,7 @@ div.scroll {
             <section class="container section section__height" id="about">
                 <h2 class="section__title">Chats</h2>
                 
-                <button class="button" onclick="openForm()">Ask an expert</button>
-
-<div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Chat</h1>
-
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
-
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
+                
                 
             </section>
 
