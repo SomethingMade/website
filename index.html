@@ -6,6 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <style>
+
+button.mbtn {
+  padding:0.6em 2em;
+  border-radius: 8px;
+  color:#fff;
+  background-color:#1976d2;
+  font-size:1.1em;
+  border:0;
+  cursor:pointer;
+  margin:1em;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -412,7 +424,7 @@ div.scroll {
             <!--=============== HOME ===============-->
             <section class="container section section__height" id="home">
                 <h2 class="section__title">Home</h2><br>
-                <button class="button" onclick="openForm()">Ask an expert</button>
+                <button class="mbtn" onclick="openForm()">Ask an expert</button>
 <center>
 <div class="chat-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
