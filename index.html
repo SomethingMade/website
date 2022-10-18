@@ -514,7 +514,8 @@ function closeForm() {
         <p class="title">Trending Products</p>
         <p>Most trending item on the market</p>
         <p></p>
-        <p><a href="https://somethingmade.github.io/website2/" class="button">Add to cart</a></p>
+        <p> <div class="openPopUp"> <button class="button">Add to cart</button></p>
+</div>
       </div>
     </div>
   </div>
@@ -709,6 +710,28 @@ function closeNav() {
             confirmBox.show();
         }
     </script>
+<div class="popUp">
+<div class="popupContent">
+<span class="close">×</span>
+<p>Sample text inside popup</p>
+</div>
+</div>
+<script>
+   var popUp = document.querySelector(".popUp");
+   var btn = document.querySelector(".openPopUp");
+   var span = document.querySelector(".close");
+   btn.addEventListener("click", () => {
+      popUp.style.display = "block";
+   });
+   span.addEventListener("click", () => {
+      popUp.style.display = "none";
+   });
+   window.onclick = function(event) {
+      if (event.target == popUp) {
+         popUp.style.display = "none";
+      }
+   };
+</script>
               
 
 
