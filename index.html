@@ -33,6 +33,18 @@
 .card button:hover {
   opacity: 0.7;
 }
+       
+   .row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+       
+       
 </style>  
     
     
@@ -118,7 +130,9 @@ function fbLogout() {
       
       
  <h2 style="text-align:center">Product Card</h2>
-
+      
+      
+ <div class="row">
 <div class="card">
   <img src="img/background.jpg" alt="Denim Jeans" style="width:100%">
   <h1>Tailored Jeans</h1>
@@ -127,10 +141,16 @@ function fbLogout() {
   <p><button>Add to Cart</button></p>
 </div>     
       
+      <div class="card">
+  <img src="img/background.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+</div>     
       
       
-      
-      
+    </div>   
       
       
       
