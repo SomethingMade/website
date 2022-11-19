@@ -144,6 +144,21 @@ body {
   
  
   
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}  
+  
+  .button4 {border-radius: 12px;}
+  
   
   
   
@@ -302,7 +317,7 @@ function fbLogout() {
 <script src="https://js.yoco.com/sdk/v1/yoco-sdk-web.js"></script>
 
 <!-- Create a pay button that will open the popup-->
-<button id="checkout-button">Pay</button>
+<button id="checkout-button" class="button button4">Check Out</button>
 
 <script>
   var yoco = new window.YocoSDK({
