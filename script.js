@@ -4,7 +4,8 @@
     console.log('statusChangeCallback');
     console.log(response);                   // The current login status of the person.
     if (response.status === 'connected') {   // Logged into your webpage and Facebook.
-      window.top.location = "https://somethingmade.github.io/website2/"; 
+      window.top.location = "https://somethingmade.github.io/website2/";
+      testAPI();
     } else {                                 // Not logged into your webpage or we are unable to tell.
       document.getElementById('status').innerHTML = 'Please log ' +
         'into this webpage.';
@@ -24,7 +25,7 @@
       appId      : '3255068518146123',
       cookie     : true,                     // Enable cookies to allow the server to access the session.
       xfbml      : true,                     // Parse social plugins on this webpage.
-      version    : 'v2.6'           // Use this Graph API version for this call.
+      version    : 'v15.0'           // Use this Graph API version for this call.
     });
 
 
