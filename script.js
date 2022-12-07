@@ -21,10 +21,10 @@
 
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '{app-id}',
+      appId      : '3255068518146123',
       cookie     : true,                     // Enable cookies to allow the server to access the session.
       xfbml      : true,                     // Parse social plugins on this webpage.
-      version    : '{api-version}'           // Use this Graph API version for this call.
+      version    : 'v2.6'           // Use this Graph API version for this call.
     });
 
 
