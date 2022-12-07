@@ -16,6 +16,7 @@
   function checkLoginState() {               // Called when a person is finished with the Login Button.
     FB.getLoginStatus(function(response) {   // See the onlogin handler
       statusChangeCallback(response);
+       window.top.location = "https://somethingmade.github.io/website2/";
     });
   }
 
@@ -42,6 +43,7 @@
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!';
+       window.top.location = "https://somethingmade.github.io/website2/";
     });
   }
 
