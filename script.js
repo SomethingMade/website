@@ -28,6 +28,11 @@
       xfbml      : true,                     // Parse social plugins on this webpage.
       version    : 'v15.0'           // Use this Graph API version for this call.
     });
+    
+    
+    FB.Event.subscribe('auth.login', function () {
+          window.location = "http://example.com";
+      });
 
 
     FB.login(function(response) {
