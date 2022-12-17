@@ -10,6 +10,13 @@
 
 </head>
 <body>
+	
+	
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0&appId=3255068518146123&autoLogAppEvents=1" nonce="xeQb8QjF"></script>
+	
+	
+	
 	<script>
 
   function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
@@ -82,6 +89,8 @@ window.top.location = "https://somethingmade.github.io/website2/";
 
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
+			
+<div class="fb-login-button" data-width="" data-size="medium" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>		
 
 <div id="status">
 </div>
